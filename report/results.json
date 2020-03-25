@@ -1,0 +1,454 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Folders and Labels features",
+    "line": 2,
+    "id": "folders-and-labels-features",
+    "tags": [
+      {
+        "name": "@Smoke",
+        "line": 1
+      }
+    ],
+    "uri": "features\\folderslabels\\FoldersLabels\\FoldersLabels.feature",
+    "elements": [
+      {
+        "id": "folders-and-labels-features;verify-default-folders",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Verify default folders",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "User successfully logins",
+            "match": {
+              "location": "steps\\home\\home.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 144000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "Validate that user have all default folders",
+            "match": {
+              "location": "steps\\home\\home.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 375000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:28"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folders-and-labels-features;verify-user-can-add-edit-delete-folder",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Verify user can add edit delete folder",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "User click on Folders and Labels",
+            "match": {
+              "location": "steps\\home\\home.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1407000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Validate that add folder button is displayed",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 768000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "User adds folder",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1031000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "Validate that folder is successfully created.",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 398000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "User edit folder",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1252000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Validate that folder name is successfully edited.",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 325000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "User delete folder",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1133000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "Validate that folder is successfully deleted",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 298000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:28"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folders-and-labels-features;verify-cancel-add-folder",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Verify cancel add folder",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "User adds folder and cancels",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1035000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Validate that folder is not successfully created",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folders-and-labels-features;verify-user-can-add-edit-delete-label",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Verify user can add edit delete label",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "User adds label",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1315000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Validate that label is successfully created.",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 401000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "User edit label",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1213000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "Validate that label is successfully edited.",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:64"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 384000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "User delete folder",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 917000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "Validate that label is successfully deleted",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 299000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:28"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "folders-and-labels-features;verify-cancel-add-label",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Verify cancel add label",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "User adds label and cancels",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 928000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "Validate that label is not successfully created",
+            "match": {
+              "location": "steps\\folderslabels\\folderslabels.steps.ts:80"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "support\\hooks.ts:28"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
