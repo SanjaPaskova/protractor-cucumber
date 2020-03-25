@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+        "**/*.js": {"when": "$(basename).ts"},
+        "**/*.js.map": true,
+        "**/*.js.map\": true": true
+    },
+    
+    "cucumberautocomplete.steps": [
+        "steps/**/*.ts",
+        "node_modules/qa-lib/src/step_definitions/*.js"
+    ],
+    "cucumberautocomplete.syncfeatures": "features/**/*feature",
+    "cucumberautocomplete.strictGherkinCompletion": true
+}
